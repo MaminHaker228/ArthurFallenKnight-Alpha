@@ -1,0 +1,70 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Get Release Version
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+      
+      - name: Create Release Archive
+        run: |
+          mkdir -p release
+          cp -r Assets release/
+          cp -r Documentation release/
+          cp README.md release/
+          cp LICENSE release/
+          cd release && zip -r ../ArthurFallenKnight-${{ steps.get_version.outputs.VERSION }}.zip . && cd ..
+      
+      - name: Generate Release Notes
+        run: |
+          cat > RELEASE_NOTES_${{ steps.get_version.outputs.VERSION }}.md << 'EOF'
+          # Release ${{ steps.get_version.outputs.VERSION }}
+          
+          ## Downloads
+          - **ArthurFallenKnight-Alpha.zip** - Complete source + assets
+          
+          ## Changes
+          See commit history for detailed changes.
+          
+          ## Installation
+          1. Extract ZIP file
+          2. Open in Unity 2022.3+
+          3. Open Scene: Assets/Scenes/Level_CursedForest.unity
+          4. Press Play
+          
+          ## Changelog
+          ### Added
+          - Complete game systems
+          - Full localization (RU/EN)
+          - Inventory & dialogue systems
+          - Enemy AI & mini-boss
+          
+          ### Known Issues
+          - Placeholder graphics
+          - No audio implementation
+          - Single level
+          
+          See [GDD.md](Documentation/GDD.md) for full design details.
+          EOF
+      
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            ArthurFallenKnight-${{ steps.get_version.outputs.VERSION }}.zip
+            RELEASE_NOTES_${{ steps.get_version.outputs.VERSION }}.md
+          body_path: RELEASE_NOTES_${{ steps.get_version.outputs.VERSION }}.md
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
