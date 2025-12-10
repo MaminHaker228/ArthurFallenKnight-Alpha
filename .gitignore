@@ -1,0 +1,48 @@
+# This .gitignore file should be placed at the root of your Unity project directory
+
+# ===========================
+# Unity generated
+# ===========================
+Library/
+Temp/
+Build/
+Builds/
+Exports/
+.vs/
+.vscode/
+
+# ===========================
+# Visual Studio / MonoDevelop
+# ===========================
+.csproj
+.sln
+.user
+.userprefs
+.pidb
+.suo
+.swp
+*.swp
+*.swo
+*.swn
+*.bak
+
+# ===========================
+# IDE
+# ===========================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# ===========================
+# Files to ignore
+# ===========================
+*.log
+*.apk
+*.unitypackage
+Debug/
+Release/
+
+# OS-specific
+desktop.ini
+EOL

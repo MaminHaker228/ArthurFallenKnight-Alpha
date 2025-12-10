@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "id": "memory_fragment",
+      "name_ru": "Осколок памяти",
+      "name_en": "Memory Fragment",
+      "rarity": "rare",
+      "type": "artifact",
+      "stackable": true,
+      "max_stack": 10
+    },
+    {
+      "id": "healing_potion",
+      "name_ru": "Вынелор Асцила",
+      "name_en": "Healing Potion",
+      "rarity": "common",
+      "type": "consumable",
+      "stackable": true,
+      "max_stack": 99,
+      "restore_health": 50
+    },
+    {
+      "id": "dark_artifact",
+      "name_ru": "Тьмный артефакт",
+      "name_en": "Dark Artifact",
+      "rarity": "legendary",
+      "type": "artifact",
+      "stackable": false,
+      "max_stack": 1
+    },
+    {
+      "id": "blade_shard",
+      "name_ru": "Осколок меча",
+      "name_en": "Blade Shard",
+      "rarity": "rare",
+      "type": "weapon",
+      "stackable": false,
+      "max_stack": 1,
+      "damage_bonus": 15
+    },
+    {
+      "id": "twisted_knight_trophy",
+      "name_ru": "Трофей Аискажённого рыцаря",
+      "name_en": "Twisted Knight Trophy",
+      "rarity": "legendary",
+      "type": "quest",
+      "stackable": false,
+      "max_stack": 1
+    }
+  ]
+}

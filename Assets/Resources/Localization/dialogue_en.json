@@ -1,0 +1,53 @@
+{
+  "dialogues": {
+    "prologue_intro": [
+      "Arthur: Darkness... everywhere only darkness...",
+      "Where am I? What happened to me? Who am I?",
+      "This forest... it is cursed. Grave markers and shadows everywhere.",
+      "Something feels different... My hand aches for a blade."
+    ],
+    "eileen_appears": [
+      "Unknown voice: Arthur!",
+      "That voice... it's Eileen...",
+      "Eileen: I found you in this cursed forest. Your wounds are many.",
+      "Arthur: Eileen... why did you risk coming here?"
+    ],
+    "boss_encounter": [
+      "A massive corrupted figure rises before you...",
+      "It speaks: MORTAL!",
+      "You dare challenge the ancient darkness? How foolish you are!",
+      "Demonic energy surges around it..."
+    ],
+    "internal_monologue": [
+      "It wears armor. Deep wounds. It was once... human.",
+      "But now it is consumed by darkness. No eyes remain. Only crimson essence.",
+      "I must end this. For Eileen. For everyone."
+    ]
+  },
+  "ui": {
+    "health": "Health",
+    "stamina": "Stamina",
+    "inventory": "Inventory",
+    "equipment": "Equipment",
+    "pause": "Paused",
+    "resume": "Resume"
+  },
+  "items": {
+    "memory_fragment": {
+      "name": "Memory Fragment",
+      "description": "A shard of forgotten memories. It warms your hand and whispers to your soul."
+    },
+    "healing_potion": {
+      "name": "Healing Potion",
+      "description": "Restores 50 health. Tastes of herbs and copper."
+    },
+    "dark_artifact": {
+      "name": "Dark Artifact",
+      "description": "Whispers of ancient darkness. Holding it for too long makes breathing difficult."
+    },
+    "blade_shard": {
+      "name": "Blade Shard",
+      "description": "Fragments of a legendary sword. It still hungers."
+    }
+  }
+}

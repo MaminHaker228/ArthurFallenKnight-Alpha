@@ -1,0 +1,63 @@
+{
+  "enemy_types": [
+    {
+      "id": "shadow_warrior",
+      "name_ru": "Теневой войнин",
+      "name_en": "Shadow Warrior",
+      "health": 30,
+      "damage": 5,
+      "speed": 3,
+      "detection_range": 5,
+      "attack_range": 1,
+      "attack_cooldown": 1,
+      "abilities": ["melee_attack", "patrol"]
+    },
+    {
+      "id": "corrupted_archer",
+      "name_ru": "Искажённый лучник",
+      "name_en": "Corrupted Archer",
+      "health": 25,
+      "damage": 7,
+      "speed": 2.5,
+      "detection_range": 7,
+      "attack_range": 5,
+      "attack_cooldown": 1.5,
+      "abilities": ["ranged_attack", "dodge_pattern", "patrol"]
+    },
+    {
+      "id": "void_entity",
+      "name_ru": "Существо Пустоты",
+      "name_en": "Void Entity",
+      "health": 40,
+      "damage": 8,
+      "speed": 4,
+      "detection_range": 6,
+      "attack_range": 2,
+      "attack_cooldown": 2,
+      "abilities": ["teleport", "aoe_attack", "summon_shadows"]
+    }
+  ],
+  "mini_boss": {
+    "id": "twisted_knight",
+    "name_ru": "Искажённый рыцарь",
+    "name_en": "Twisted Knight",
+    "max_health": 150,
+    "phase1_damage": 8,
+    "phase2_damage": 12,
+    "speed": 4,
+    "attack_cooldown": 1.2,
+    "phases": [
+      {
+        "phase": 1,
+        "abilities": ["combo_attack", "wave_attack"],
+        "health_threshold": 1.0
+      },
+      {
+        "phase": 2,
+        "abilities": ["enhanced_combo", "dash_rush", "shockwave"],
+        "health_threshold": 0.5,
+        "stat_multiplier": 1.2
+      }
+    ]
+  }
+}
