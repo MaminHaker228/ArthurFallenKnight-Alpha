@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG ! tag:yaml.org,2002:omap
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Player
+  - Projectile
+  - Hazard
+  - Trigger
+  - NPC
+  - Boss
+  - Checkpoint
+  - Collectible
+  - Destroyer
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Enemy
+  - Ground
+  - Walls
+  - Obstacles
+  - Projectiles
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1623532223
+    locked: 0
+  - name: Enemies
+    uniqueID: 1789043597
+    locked: 0
+  - name: Player
+    uniqueID: 1847494893
+    locked: 0
+  - name: Effects
+    uniqueID: 1432104575
+    locked: 0
+  - name: UI
+    uniqueID: 1582395393
+    locked: 0

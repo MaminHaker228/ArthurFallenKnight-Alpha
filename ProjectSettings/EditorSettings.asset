@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG ! tag:yaml.org,2002:omap
+--- !u!159 &1
+EditorSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_SerializationMode: 2
+  m_LineEndingsForNewScripts: 0
+  m_DefaultBehaviorMode: 0
+  m_PrefabRegularEnvironment: {fileID: 0}
+  m_PrefabUIEnvironment: {fileID: 0}
+  m_SpritePackerMode: 0
+  m_SpritePackerPadding: 4
+  m_TexturePackerPadding: 2
+  m_ProjectGenerationIncludedExtensions: txt;xml;asm;asmref;doc;json
+  m_ProjectGenerationRootNamespace: 
+  m_CollabEditorSettings:
+    inProgressEnabled: 1
+  onSceneGUIInstances: []
+  m_Bc7TexconvToolPath: 
+  m_EtcTexconvToolPath: 
+  m_CrunchLimitPerFrame: 32
+  m_CrunchCompressBackground: 1
+  m_MaximumImportWorkers: 8
+  m_IdleWorkerShutdownDelay: 60
